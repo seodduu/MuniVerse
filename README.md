@@ -26,15 +26,17 @@
 
 ## Table of Contents
 
-- [서비스 소개](#서비스-소개)
-- [데모 예시](#데모-예시)
-- [차별화 포인트](#차별화-포인트)
-- [시스템 아키텍처](#시스템-아키텍처)
-- [기술 스택](#기술-스택)
-- [실행 방법](#실행-방법)
-- [팀원](#팀원)
+- [🎧 서비스 소개](#service-intro)
+- [🎬 데모 예시](#demo-examples)
+- [✨ 차별화 포인트](#differentiation)
+- [🏗️ 시스템 아키텍처](#system-architecture)
+- [🛠️ 기술 스택](#tech-stack)
+- [🚀 실행 방법](#how-to-start)
+- [🧑‍💻 팀원](#members)
 
-## 서비스 소개
+<a id="service-intro"></a>
+
+## 🎧 서비스 소개
 
 <h3>
 MuniVerse는 단순 스트리밍을 넘어 사용자의 감상 데이터, 태그 반응, AI 생성 이력을 함께 분석합니다.
@@ -75,9 +77,11 @@ MuniVerse는 단순 스트리밍을 넘어 사용자의 감상 데이터, 태그
   </tr>
 </table>
 
-## 데모 예시
+<a id="demo-examples"></a>
 
-<h2>01. 홈 검색</h2>
+## 🎬 데모 예시
+
+<h2>🔎 01. 홈 검색</h2>
 
 <h3>홈에서 음악을 검색하고 추천 콘텐츠로 진입합니다.</h3>
 
@@ -87,7 +91,7 @@ MuniVerse는 단순 스트리밍을 넘어 사용자의 감상 데이터, 태그
   alt="홈 검색"
 />
 
-<h2>02. 재생 및 분석</h2>
+<h2>📊 02. 재생 및 분석</h2>
 
 <h3>음악 재생과 동시에 곡 분석 정보를 확인합니다.</h3>
 
@@ -97,7 +101,7 @@ MuniVerse는 단순 스트리밍을 넘어 사용자의 감상 데이터, 태그
   alt="재생 및 분석"
 />
 
-<h2>03. 검색</h2>
+<h2>🔍 03. 검색</h2>
 
 <h3>키워드 기반으로 곡, 아티스트, 앨범을 탐색합니다.</h3>
 
@@ -107,7 +111,7 @@ MuniVerse는 단순 스트리밍을 넘어 사용자의 감상 데이터, 태그
   alt="검색"
 />
 
-<h2>04. 비슷한 곡</h2>
+<h2>🎼 04. 비슷한 곡</h2>
 
 <h3>현재 곡과 유사한 음악을 추천받아 이어서 감상합니다.</h3>
 
@@ -117,7 +121,7 @@ MuniVerse는 단순 스트리밍을 넘어 사용자의 감상 데이터, 태그
   alt="비슷한 곡"
 />
 
-<h2>05. 음악 생성</h2>
+<h2>🎹 05. 음악 생성</h2>
 
 <h3>원하는 분위기를 입력해 AI 음악을 생성합니다.</h3>
 
@@ -127,7 +131,7 @@ MuniVerse는 단순 스트리밍을 넘어 사용자의 감상 데이터, 태그
   alt="음악 생성"
 />
 
-<h2>06. 태그 탐색</h2>
+<h2>🏷️ 06. 태그 탐색</h2>
 
 <h3>태그 기반 MusicVerse에서 취향에 맞는 곡을 발견합니다.</h3>
 
@@ -137,7 +141,9 @@ MuniVerse는 단순 스트리밍을 넘어 사용자의 감상 데이터, 태그
   alt="태그 탐색"
 />
 
-## 차별화 포인트
+<a id="differentiation"></a>
+
+## ✨ 차별화 포인트
 
 <table>
   <tr>
@@ -167,25 +173,21 @@ MuniVerse는 단순 스트리밍을 넘어 사용자의 감상 데이터, 태그
   </tr>
 </table>
 
-## 시스템 아키텍처
+<a id="system-architecture"></a>
+
+## 🏗️ 시스템 아키텍처
 
 ### 서비스 아키텍처
 
 <img
-  src="https://github.com/user-attachments/assets/ad2de754-e6f5-44d2-9c53-80a20144bcb4"
+  src="./docs/images/service-architecture-ko.jpg"
   width="100%"
-  alt="MuniVerse service architecture"
+  alt="MuniVerse 서비스 아키텍처"
 />
 
-### 기술 중심 아키텍처
+<a id="tech-stack"></a>
 
-<img
-  src="https://github.com/user-attachments/assets/25902f5d-fe60-4ca2-832d-225c76ecdcf3"
-  width="100%"
-  alt="MuniVerse technical architecture"
-/>
-
-## 기술 스택
+## 🛠️ 기술 스택
 
 | Category | Technology |
 | :--- | :--- |
@@ -197,7 +199,9 @@ MuniVerse는 단순 스트리밍을 넘어 사용자의 감상 데이터, 태그
 | **Monitoring** | <img src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white"/> <img src="https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white"/> <img src="https://img.shields.io/badge/Loki-F46800?style=for-the-badge&logo=grafana&logoColor=white"/> <img src="https://img.shields.io/badge/Promtail-F46800?style=for-the-badge&logo=grafana&logoColor=white"/> <img src="https://img.shields.io/badge/Flower-37ce02?style=for-the-badge&logo=celery&logoColor=white"/> |
 | **CI / CD** | <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white"/> |
 
-## 실행 방법
+<a id="how-to-start"></a>
+
+## 🚀 실행 방법
 
 ### Backend
 
@@ -258,7 +262,9 @@ npm install
 npm run dev
 ```
 
-## 팀원
+<a id="members"></a>
+
+## 🧑‍💻 팀원
 
 | Name | 황현승 | 서두현 | 송영의 | 이재원 | 신영준 |
 | :--: | :----: | :----: | :----: | :----: | :----: |
