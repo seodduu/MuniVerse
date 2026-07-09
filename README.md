@@ -1,225 +1,219 @@
-### <p align = center> 🏆 2025 Techeer Winter BootCamp 우수상 🏆 <p>
+# MuniVerse
 
 <p align="center">
-  <a href="https://github.com/your_repo">
-    <img
-      src="https://github.com/user-attachments/assets/0cb67c4b-84fe-4544-9d0a-161d04524ddc"
-      width="400"
-      style="height:auto;"
-      alt="E83A0AB3-AD01-4CC4-9AAC-3C62A20C9691"
-    />
-  </a>
+  <img
+    src="https://github.com/user-attachments/assets/0cb67c4b-84fe-4544-9d0a-161d04524ddc"
+    width="520"
+    alt="MuniVerse logo"
+  />
+</p>
+
+<h3 align="center">🏆 2025 Techeer Winter BootCamp 우수상 🏆</h3>
+
+<p align="center">
+  <strong>Music + Universe</strong><br/>
+  세분화된 태그 시스템과 음원 분석으로 개인의 취향을 찾고,<br/>
+  AI 음악 창작과 공유까지 경험할 수 있는 음악 플랫폼
 </p>
 
 <p align="center">
-
+  <a href="https://www.brokencarrot.my/"><strong>서비스 바로가기</strong></a>
+  ·
+  <a href="https://medium.com/@SeoDDuu/muniverse-9b8a4786b3d5"><strong>Medium</strong></a>
+  ·
+  <a href="https://www.youtube.com/watch?v=ExmYixVa0_Y&list=PLo5_LnrAlgO8fJZ5hYUqVJApjxp9LmzHW&index=6"><strong>발표 영상</strong></a>
 </p>
 
+## Table of Contents
 
-<p align="center"><strong>Music + Universe</strong></p>
-<p align="center">세분화된 태그 시스템과 음원 분석을 통해, 방대한 음악 속에서 개인의 취향을 찾아가고 <br> AI 음악 창작까지 경험할 수 있는 차별화된 음악 플랫폼</p>
-<br>
+- [서비스 소개](#서비스-소개)
+- [데모 예시](#데모-예시)
+- [차별화 포인트](#차별화-포인트)
+- [시스템 아키텍처](#시스템-아키텍처)
+- [기술 스택](#기술-스택)
+- [실행 방법](#실행-방법)
+- [팀원](#팀원)
 
+## 서비스 소개
 
-# 🔗 Table of Contents 
-- [Introduction](#introduction)
-- [DEMO](#demo)
-- [System Architecture](#system-architecture)
-- [ERD](#erd)
-- [Tech Stack](#tech-stack)
-- [Monitoring](#monitoring)
-- [API](#api)
-- [How to Start](#how-to-start)
-- [Member](#member)
-<br>
+MuniVerse는 단순 스트리밍을 넘어 사용자의 감상 데이터, 태그 반응, AI 생성 이력을 함께 분석합니다.
+사용자는 음악을 듣고, 취향을 탐색하고, 직접 AI 음악을 생성해 플랫폼에 공유할 수 있습니다.
 
+| 주요 기능 | 설명 |
+| :--- | :--- |
+| **개인 음악 분석** | 청취 시간, AI 생성 내역, TOP 장르/아티스트, 분위기/키워드, 실시간 나의 TOP 차트를 한눈에 확인 |
+| **음원별 상세 분석** | 감정 분석, 시간대별 재생 패턴, 유사 음악, 태그 반응을 곡 단위로 제공 |
+| **MusicVerse 탐색** | 59개 태그 기반으로 취향에 맞는 곡을 탐색하고 바로 재생 |
+| **AI 음악 생성** | 원하는 분위기와 키워드를 입력해 AI 곡을 생성하고 게시 |
+| **차트** | 실시간 TOP100, 일일 차트, AI 음악 차트로 트렌드 확인 |
+| **태그 스테이션** | 장르/무드 기반 연속 재생으로 취향 확장 |
 
-<a id="introduction"></a>
-# ℹ️ Introduction
+## 데모 예시
 
-### Demo URL
-> https://www.brokencarrot.my/
+### 홈 검색
 
-### Medium
-> [Muniverse Medium](https://medium.com/@SeoDDuu/muniverse-9b8a4786b3d5)
+<h4>홈에서 음악을 검색하고 추천 콘텐츠로 진입합니다.</h4>
 
-### 발표 링크
-> https://www.youtube.com/watch?v=ExmYixVa0_Y&list=PLo5_LnrAlgO8fJZ5hYUqVJApjxp9LmzHW&index=6
-<br>
+<img
+  src="https://github.com/user-attachments/assets/a203b157-503a-4faf-ad20-cafb99d3f533"
+  width="100%"
+  alt="홈 검색"
+/>
 
+### 재생 및 분석
 
-* **개인 음악 분석:** 청취 시간·AI 생성 내역·TOP 장르/아티스트·분위기/키워드·실시간 나의 TOP 차트를 한눈에 확인.
-* **음원별 상세 분석:** 감정 분석·시간대별 재생 패턴·유사 음악·태그 반응까지 곡 단위로 깊게 파악.
-* **태그 검색 및 탐색(MusicVerse):** 59개 태그 기반으로 취향에 맞는 곡을 발견하고 분위기 있게 탐색/청취.
-* **AI 음악 생성:** 원하는 느낌을 입력해 AI 곡을 만들고, 플랫폼에 게시해 공유/스트리밍.
-* **차트:** 실시간 TOP100·일일 차트·AI 음악 차트로 트렌드와 인기곡을 빠르게 탐색.
-* **태그 스테이션:** 태그 기반 스테이션으로 장르/무드별 빠른 선곡과 연속 재생으로 취향 확장.
-<br>
+<h4>음악 재생과 동시에 곡 분석 정보를 확인합니다.</h4>
 
+<img
+  src="https://github.com/user-attachments/assets/02afa34c-d761-431d-bfd4-dfec26d07692"
+  width="100%"
+  alt="재생 및 분석"
+/>
 
-<a id="demo"></a>
-# 🎵 DEMO
+### 검색
 
-### | 홈 검색
-<img src="https://github.com/user-attachments/assets/a203b157-503a-4faf-ad20-cafb99d3f533" width="1800" />
+<h4>키워드 기반으로 곡, 아티스트, 앨범을 탐색합니다.</h4>
 
-### | 재생 및 분석
-<img src="https://github.com/user-attachments/assets/02afa34c-d761-431d-bfd4-dfec26d07692" width="1800" />
+<img
+  src="https://github.com/user-attachments/assets/14ec39a3-2680-4e25-b1ce-69ec5da36b58"
+  width="100%"
+  alt="검색"
+/>
 
-### | 검색
-<img src="https://github.com/user-attachments/assets/14ec39a3-2680-4e25-b1ce-69ec5da36b58" width="1800" />
+### 비슷한 곡
 
-### | 비슷한 곡
-<img src="https://github.com/user-attachments/assets/1dbdb2d2-c4d1-4c3a-a0b1-f43b9700f7e6" width="1800" />
+<h4>현재 곡과 유사한 음악을 추천받아 이어서 감상합니다.</h4>
 
-### | 음악 생성
-<img src="https://github.com/user-attachments/assets/d3016f85-4dc3-45a4-9352-2adba0ead21b" width="1800" />
+<img
+  src="https://github.com/user-attachments/assets/1dbdb2d2-c4d1-4c3a-a0b1-f43b9700f7e6"
+  width="100%"
+  alt="비슷한 곡"
+/>
 
-### | 태그 탐색
-<img src="https://github.com/user-attachments/assets/08cad6c9-84e5-4b72-815e-c3a6d098ebee" width="1800" />
+### 음악 생성
 
+<h4>원하는 분위기를 입력해 AI 음악을 생성합니다.</h4>
 
-<a id="system-architecture"></a>
-# 🏗️ System Architechture
+<img
+  src="https://github.com/user-attachments/assets/d3016f85-4dc3-45a4-9352-2adba0ead21b"
+  width="100%"
+  alt="음악 생성"
+/>
 
-![테커 I 팀 시스템 아키텍처의 1월 27일 최종봄](https://github.com/user-attachments/assets/ad2de754-e6f5-44d2-9c53-80a20144bcb4)
+### 태그 탐색
 
+<h4>태그 기반 MusicVerse에서 취향에 맞는 곡을 발견합니다.</h4>
 
-![기술 중심 아키텍처 최종본](https://github.com/user-attachments/assets/25902f5d-fe60-4ca2-832d-225c76ecdcf3)
+<img
+  src="https://github.com/user-attachments/assets/08cad6c9-84e5-4b72-815e-c3a6d098ebee"
+  width="100%"
+  alt="태그 탐색"
+/>
 
+## 차별화 포인트
 
-<br><br>
+| 구분 | 일반 음악 플랫폼 | MuniVerse |
+| :--- | :--- | :--- |
+| **탐색 기준** | 장르, 아티스트, 인기 차트 중심 | 59개 감정/상황/무드 태그 기반 탐색 |
+| **추천 경험** | 사용자의 재생 이력 기반 추천 | 청취 이력, 태그 반응, 곡 분석 데이터를 함께 반영 |
+| **음원 분석** | 곡 정보와 재생 수 중심 | 감정, 재생 패턴, 유사 음악, 태그 반응까지 시각화 |
+| **AI 창작** | 감상 중심 | 사용자가 직접 프롬프트를 입력해 AI 음악 생성 및 공유 |
+| **운영 관측성** | 사용자에게 보이지 않음 | Prometheus, Grafana, Loki, Flower 기반 모니터링 구성 |
 
+## 시스템 아키텍처
 
-<a id="erd"></a>
-# 💾 ERD
+### 서비스 아키텍처
 
-![ERD](../photo/erd.png)
-<br><br>
+<img
+  src="https://github.com/user-attachments/assets/ad2de754-e6f5-44d2-9c53-80a20144bcb4"
+  width="100%"
+  alt="MuniVerse service architecture"
+/>
 
+### 기술 중심 아키텍처
 
-<a id="tech-stack"></a>
-# 🛠️ Tech Stack
+<img
+  src="https://github.com/user-attachments/assets/25902f5d-fe60-4ca2-832d-225c76ecdcf3"
+  width="100%"
+  alt="MuniVerse technical architecture"
+/>
+
+## 기술 스택
 
 | Category | Technology |
 | :--- | :--- |
-| **Frontend** | <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/> <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black"/> <img src="https://img.shields.io/badge/Tailwind_CSS-38BDF8?style=for-the-badge&logo=tailwindcss&logoColor=white"/> <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white"/> <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white"> |
-| **Backend** | <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"/> <img src="https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white"/> <img src="https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray"/> <img src="https://img.shields.io/badge/Celery-37814A?style=for-the-badge&logo=celery&logoColor=white"/> <img src="https://img.shields.io/badge/Rabbitmq-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white"/> <img src="https://img.shields.io/badge/Traefik-24A1C1?style=for-the-badge&logo=traefik&logoColor=white"/> |
-| **Database & Search** | <img src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white"/> <img src="https://img.shields.io/badge/OpenSearch-005EB8?style=for-the-badge&logo=opensearch&logoColor=white"/> |
-| **Infrastructure** | <img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white"/> <img src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white"/> <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"/> |
-| **AI Pipeline** | <img src="https://img.shields.io/badge/Meta%20Llama%203.1-0467DF?style=for-the-badge&logo=meta&logoColor=white"/> <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white"/> <img src="https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white"/> <img src="https://img.shields.io/badge/Suno_API-000000?style=for-the-badge&logo=music&logoColor=white"/> <img src="https://img.shields.io/badge/Tailscale-181818?style=for-the-badge&logo=tailscale&logoColor=white"/> |
-| **Monitoring** | <img src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white"/> <img src="https://img.shields.io/badge/grafana-%23F46800.svg?style=for-the-badge&logo=grafana&logoColor=white"/> <img src="https://img.shields.io/badge/loki-F46800?style=for-the-badge&logo=grafana&logoColor=white"/> <img src="https://img.shields.io/badge/Promtail-F46800?style=for-the-badge&logo=grafana&logoColor=white"/> <img src="https://img.shields.io/badge/Flower-37ce02?style=for-the-badge&logo=celery&logoColor=white"/> |
-| **CI / CD** | <img src="https://img.shields.io/badge/github%20actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white"/> |
+| **Frontend** | <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/> <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black"/> <img src="https://img.shields.io/badge/Tailwind_CSS-38BDF8?style=for-the-badge&logo=tailwindcss&logoColor=white"/> <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white"/> <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white"/> |
+| **Backend** | <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"/> <img src="https://img.shields.io/badge/django-092E20?style=for-the-badge&logo=django&logoColor=white"/> <img src="https://img.shields.io/badge/Django_REST-ff1709?style=for-the-badge&logo=django&logoColor=white"/> <img src="https://img.shields.io/badge/Celery-37814A?style=for-the-badge&logo=celery&logoColor=white"/> <img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white"/> <img src="https://img.shields.io/badge/Traefik-24A1C1?style=for-the-badge&logo=traefik&logoColor=white"/> |
+| **Database & Search** | <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white"/> <img src="https://img.shields.io/badge/OpenSearch-005EB8?style=for-the-badge&logo=opensearch&logoColor=white"/> |
+| **Infrastructure** | <img src="https://img.shields.io/badge/Docker-0db7ed?style=for-the-badge&logo=docker&logoColor=white"/> <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white"/> <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"/> |
+| **AI Pipeline** | <img src="https://img.shields.io/badge/Meta_Llama_3.1-0467DF?style=for-the-badge&logo=meta&logoColor=white"/> <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white"/> <img src="https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white"/> <img src="https://img.shields.io/badge/Suno_API-000000?style=for-the-badge&logo=music&logoColor=white"/> <img src="https://img.shields.io/badge/Tailscale-181818?style=for-the-badge&logo=tailscale&logoColor=white"/> |
+| **Monitoring** | <img src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white"/> <img src="https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white"/> <img src="https://img.shields.io/badge/Loki-F46800?style=for-the-badge&logo=grafana&logoColor=white"/> <img src="https://img.shields.io/badge/Promtail-F46800?style=for-the-badge&logo=grafana&logoColor=white"/> <img src="https://img.shields.io/badge/Flower-37ce02?style=for-the-badge&logo=celery&logoColor=white"/> |
+| **CI / CD** | <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white"/> |
 
-<br>
+## 실행 방법
 
-<a id="monitoring"></a>
-# 📊 Monitoring
-
-<table width="100%">
-  <tr>
-    <th align="center" colspan="2">Django</th>
-  </tr>
-  <tr>
-    <td width="50%"><img src="../photo/mornitoring/django1.png" width="100%"></td>
-    <td width="50%"><img src="../photo/mornitoring/django2.png" width="100%"></td>
-  </tr>
-  <tr>
-    <th align="center" colspan="2">cAdvisor</th>
-  </tr>
-  <tr>
-    <td width="50%"><img src="../photo/mornitoring/cAdvisor1.png" width="100%"></td>
-    <td width="50%"><img src="../photo/mornitoring/cAdvisor2.png" width="100%"></td>
-  </tr>
-  <tr>
-    <th align="center" colspan="2">Node Exporter</th>
-  </tr>
-  <tr>
-    <td width="50%"><img src="../photo/mornitoring/node_exporter1.png" width="100%"></td>
-    <td width="50%"><img src="../photo/mornitoring/node_exporter2.png" width="100%"></td>
-  </tr>
-</table>
-<br><br>
-
-
-<a id="api"></a>
-# 🔌 API
-
-<img width="2946" height="6990" alt="SCR-20260127-bjcp" src="https://github.com/user-attachments/assets/8ea6b962-0f12-4d9d-a6d5-26a56e999d17" />
-<br><br>
-
-
-<a id="how-to-start"></a>
-# How to Start
-
-### backend
+### Backend
 
 ```bash
-$ git clone https://github.com/2025-TecheerBootcamp-team-i/Backend.git
-```
-
-### env setting
-
-- settings/.env
-
-```text
-SECRET_KEY = 
-DEBUG = 
-DJANGO_ALLOWED_HOSTS = 
-
-SQL_ENGINE = 
-SQL_DATABASE = 
-SQL_USER = 
-SQL_PASSWORD = 
-SQL_HOST = 
-SQL_PORT = 
-
-CELERY_BROKER_URL = 
-
-WINDOWS_LLAMA_IP = 
-LLAMA_MODEL_NAME = 
-
-NGROK_AUTHTOKEN = 
-
-SUNO_API_URL = 
-SUNO_MODEL_VERSION = 
-SUNO_TEST_MODE = 
-SUNO_API_KEY = 
-SUNO_CALLBACK_URL = 
-
-OPENSEARCH_HOST = 
-OPENSEARCH_PORT = 
-OPENSEARCH_USERNAME = 
-OPENSEARCH_PASSWORD = 
-OPENSEARCH_USE_SSL = 
-OPENSEARCH_VERIFY_CERTS = 
-OPENSEARCH_INDEX_PREFIX = 
-
-AWS_ACCESS_KEY_ID = 
-AWS_SECRET_ACCESS_KEY = 
-AWS_STORAGE_BUCKET_NAME = 
-AWS_S3_REGION_NAME = 
-AWS_S3_CUSTOM_DOMAIN = 
-```
-### docker
-```text
+git clone https://github.com/2025-TecheerBootcamp-team-i/Backend.git
+cd Backend
 docker compose up -d --build
 ```
-### frontend
-```bash
-$ git clone https://github.com/2025-TecheerBootcamp-team-i/Frontend.git
-```
+
+### Backend Environment
+
 ```text
+SECRET_KEY=django-insecure-your-secret-key-change-this-in-production
+DEBUG=1
+DJANGO_ALLOWED_HOSTS=localhost,127.0.0.1,0.0.0.0
+
+SQL_ENGINE=django.db.backends.postgresql
+SQL_DATABASE=postgres
+SQL_USER=postgres
+SQL_PASSWORD=your_database_password_here
+SQL_HOST=host.docker.internal
+SQL_PORT=5432
+
+CELERY_BROKER_URL=amqp://guest:guest@rabbitmq:5672//
+
+WINDOWS_LLAMA_IP=your_llama_server_ip_here
+LLAMA_MODEL_NAME=llama3.1:8b-instruct-q8_0
+
+NGROK_AUTHTOKEN=your_ngrok_authtoken_here
+
+SUNO_API_URL=https://api.sunoapi.org
+SUNO_MODEL_VERSION=V4.5
+SUNO_TEST_MODE=false
+SUNO_API_KEY=your_suno_api_key_here
+SUNO_CALLBACK_URL=https://your-ngrok-url.ngrok-free.dev/api/v1/webhook/suno/
+
+OPENSEARCH_HOST=your-opensearch-domain.region.es.amazonaws.com
+OPENSEARCH_PORT=443
+OPENSEARCH_USERNAME=admin
+OPENSEARCH_PASSWORD=your_opensearch_password_here
+OPENSEARCH_USE_SSL=True
+OPENSEARCH_VERIFY_CERTS=True
+OPENSEARCH_INDEX_PREFIX=music
+
+AWS_ACCESS_KEY_ID=your_aws_access_key_id
+AWS_SECRET_ACCESS_KEY=your_aws_secret_access_key
+AWS_STORAGE_BUCKET_NAME=your_s3_bucket_name
+AWS_S3_REGION_NAME=ap-northeast-2
+AWS_S3_CUSTOM_DOMAIN=your_s3_bucket_name.s3.ap-northeast-2.amazonaws.com
+```
+
+### Frontend
+
+```bash
+git clone https://github.com/2025-TecheerBootcamp-team-i/Frontend.git
+cd Frontend
 npm install
 npm run dev
 ```
-<br>
 
-
-<a id="member"></a>
-# 🧑 Member
+## 팀원
 
 | Name | 황현승 | 서두현 | 송영의 | 이재원 | 신영준 |
 | :--: | :----: | :----: | :----: | :----: | :----: |
-| Profile | <a href="https://github.com/hhyunseung1216"><img src="https://avatars.githubusercontent.com/u/144646822?v=4" width="100"></a> | <a href="https://github.com/SeoDoo"><img src="https://avatars.githubusercontent.com/u/150519615?v=4" width="100"></a> | <a href="https://github.com/youngiue"><img src="https://avatars.githubusercontent.com/u/198860390?v=4" width="100"></a> | <a href="https://github.com/jaaewon"><img src="https://avatars.githubusercontent.com/u/58101761?v=4" width="100"></a> | <a href="https://github.com/YoungJune-02"><img src="https://avatars.githubusercontent.com/u/251961788?v=4" width="100"></a> | <br/> | <br/> | <br/> | <br/> |
-| GitHub | [![GitHub](https://img.shields.io/badge/hhyunseung1216-afdee2?logo=github&style=flat)](https://github.com/hhyunseung1216) | [![GitHub](https://img.shields.io/badge/SeoDoo-afdee2?logo=github&style=flat)](https://github.com/SeoDoo) | [![GitHub](https://img.shields.io/badge/youngiue-afdee2?logo=github&style=flat)](https://github.com/youngiue) | [![GitHub](https://img.shields.io/badge/jaaewon-afdee2?logo=github&style=flat)](https://github.com/jaaewon) | [![GitHub](https://img.shields.io/badge/YoungJune--02-afdee2?logo=github&style=flat)](https://github.com/YoungJune-02) |
+| Profile | <a href="https://github.com/hhyunseung1216"><img src="https://avatars.githubusercontent.com/u/144646822?v=4" width="100" alt="황현승"/></a> | <a href="https://github.com/SeoDoo"><img src="https://avatars.githubusercontent.com/u/150519615?v=4" width="100" alt="서두현"/></a> | <a href="https://github.com/youngiue"><img src="https://avatars.githubusercontent.com/u/198860390?v=4" width="100" alt="송영의"/></a> | <a href="https://github.com/jaaewon"><img src="https://avatars.githubusercontent.com/u/58101761?v=4" width="100" alt="이재원"/></a> | <a href="https://github.com/YoungJune-02"><img src="https://avatars.githubusercontent.com/u/251961788?v=4" width="100" alt="신영준"/></a> |
+| GitHub | [hhyunseung1216](https://github.com/hhyunseung1216) | [SeoDoo](https://github.com/SeoDoo) | [youngiue](https://github.com/youngiue) | [jaaewon](https://github.com/jaaewon) | [YoungJune-02](https://github.com/YoungJune-02) |
