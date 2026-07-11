@@ -24,7 +24,7 @@
   <a href="https://www.youtube.com/watch?v=ExmYixVa0_Y&list=PLo5_LnrAlgO8fJZ5hYUqVJApjxp9LmzHW&index=6"><strong>발표 영상</strong></a>
 </p>
 
-## Table of Contents
+# Table of Contents
 
 - [서비스 소개](#service-intro)
 - [데모 예시](#demo-examples)
@@ -36,7 +36,7 @@
 
 <a id="service-intro"></a>
 
-## 🎧 서비스 소개
+# 🎧 서비스 소개
 
 <h3>
 MuniVerse는 단순 스트리밍을 넘어 사용자의 감상 데이터, 태그 반응, AI 생성 이력을 함께 분석합니다.
@@ -79,7 +79,7 @@ MuniVerse는 단순 스트리밍을 넘어 사용자의 감상 데이터, 태그
 
 <a id="demo-examples"></a>
 
-## 🎬 데모 예시
+# 🎬 데모 예시
 
 <h2>🔎 01. 홈 검색</h2>
 
@@ -143,7 +143,7 @@ MuniVerse는 단순 스트리밍을 넘어 사용자의 감상 데이터, 태그
 
 <a id="differentiation"></a>
 
-## ✨ 차별화 포인트
+# ✨ 차별화 포인트
 
 <table>
   <tr>
@@ -175,9 +175,9 @@ MuniVerse는 단순 스트리밍을 넘어 사용자의 감상 데이터, 태그
 
 <a id="system-architecture"></a>
 
-## 🏗️ 시스템 아키텍처
+# 🏗️ 시스템 아키텍처
 
-### 서비스 아키텍처
+## 서비스 아키텍처
 
 <img
   src="./docs/images/service-architecture-ko.jpg"
