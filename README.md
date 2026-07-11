@@ -177,8 +177,6 @@ MuniVerse는 단순 스트리밍을 넘어 사용자의 감상 데이터, 태그
 
 # 🏗️ 시스템 아키텍처
 
-## 서비스 아키텍처
-
 <img
   src="./docs/images/service-architecture-ko.jpg"
   width="100%"
