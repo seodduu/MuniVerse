@@ -26,13 +26,13 @@
 
 ## Table of Contents
 
-- [🎧 서비스 소개](#service-intro)
-- [🎬 데모 예시](#demo-examples)
-- [✨ 차별화 포인트](#differentiation)
-- [🏗️ 시스템 아키텍처](#system-architecture)
-- [🛠️ 기술 스택](#tech-stack)
-- [🚀 실행 방법](#how-to-start)
-- [🧑‍💻 팀원](#members)
+- [서비스 소개](#service-intro)
+- [데모 예시](#demo-examples)
+- [차별화 포인트](#differentiation)
+- [시스템 아키텍처](#system-architecture)
+- [기술 스택](#tech-stack)
+- [실행 방법](#how-to-start)
+- [팀원](#members)
 
 <a id="service-intro"></a>
 
